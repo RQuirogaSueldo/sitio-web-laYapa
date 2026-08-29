@@ -88,7 +88,6 @@ button {
 .section-label {
     display: inline-block;
     margin-bottom: 12px;
-
     color: var(--primary);
     font-size: 0.85rem;
     font-weight: 700;
@@ -98,7 +97,6 @@ button {
 
 .section-heading h2 {
     margin-bottom: 16px;
-
     font-size: clamp(2rem, 4vw, 3rem);
     line-height: 1.15;
 }
@@ -117,14 +115,10 @@ button {
     align-items: center;
     justify-content: center;
     gap: 8px;
-
     min-height: 48px;
     padding: 12px 24px;
-
     border-radius: 50px;
-
     font-weight: 700;
-
     transition:
         transform 0.2s ease,
         background 0.2s ease,
@@ -170,15 +164,12 @@ button {
     position: sticky;
     top: 0;
     z-index: 1000;
-
     background: rgba(255, 255, 255, 0.97);
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .nav-container {
     min-height: 76px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,7 +191,6 @@ button {
 .nav a {
     font-size: 0.95rem;
     font-weight: 600;
-
     transition: color 0.2s ease;
 }
 
@@ -210,12 +200,14 @@ button {
 
 .menu-toggle {
     display: none;
-
     border: 0;
     background: transparent;
-
     font-size: 1.8rem;
     cursor: pointer;
+}
+
+.header-brand {
+    display: none;
 }
 
 
@@ -225,34 +217,27 @@ button {
 
 .hero {
     position: relative;
-
     min-height: 680px;
-
     display: flex;
     align-items: center;
-
     background:
         linear-gradient(90deg,
             rgba(39, 24, 18, 0.85),
             rgba(39, 24, 18, 0.45)),
-        url("/asset/img/fondo.png") center/cover no-repeat;
+        url("/asset/img/fondo.webp") center/cover no-repeat;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
-
     max-width: 750px;
-
     color: var(--white);
-
     text-align: center;
 }
 
 .hero-tag {
     display: inline-block;
     margin-bottom: 20px;
-
     font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -261,7 +246,6 @@ button {
 
 .hero h1 {
     margin-bottom: 25px;
-
     font-size: clamp(2.8rem, 6vw, 5rem);
     font-weight: 800;
     line-height: 1.02;
@@ -275,7 +259,6 @@ button {
 .hero p {
     max-width: 620px;
     margin-bottom: 32px;
-
     font-size: clamp(1.05rem, 2vw, 1.3rem);
 }
 
@@ -303,13 +286,9 @@ button {
 
 .product-card {
     overflow: hidden;
-
     background: var(--white);
-
     border-radius: var(--radius);
-
     box-shadow: var(--shadow);
-
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
@@ -329,7 +308,6 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
     transition: transform 0.4s ease;
 }
 
@@ -344,9 +322,7 @@ button {
 .product-tag {
     display: inline-block;
     margin-bottom: 10px;
-
     color: var(--primary);
-
     font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -364,13 +340,13 @@ button {
 
 .product-info {
     margin-bottom: 20px;
-
     font-size: 1.1rem;
 }
 
 .product-link {
     color: var(--primary);
     font-weight: 700;
+    cursor: pointer;
 }
 
 
@@ -398,7 +374,6 @@ button {
 
 .about-content h2 {
     margin-bottom: 25px;
-
     font-size: clamp(2rem, 4vw, 3rem);
     line-height: 1.1;
 }
@@ -425,12 +400,9 @@ button {
 
 .testimonial-card {
     padding: 30px;
-
     background: var(--white);
     border-radius: var(--radius);
-
     box-shadow: var(--shadow);
-
     border-top: 4px solid var(--secondary);
 }
 
@@ -464,15 +436,12 @@ button {
     max-width: 900px;
     margin: auto;
     padding: 35px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-
     background: var(--white);
     border-radius: var(--radius);
-
     box-shadow: var(--shadow);
 }
 
@@ -485,15 +454,11 @@ button {
 .location-icon {
     width: 60px;
     height: 60px;
-
     display: grid;
     place-items: center;
-
     flex-shrink: 0;
-
     background: var(--cream);
     border-radius: 50%;
-
     font-size: 1.5rem;
 }
 
@@ -543,7 +508,6 @@ button {
 
 .contact-data {
     margin-top: 25px;
-
     color: rgba(255, 255, 255, 0.85);
 }
 
@@ -563,9 +527,7 @@ button {
 .footer {
     position: relative;
     overflow: hidden;
-
     padding: 55px 0 35px;
-
     background: var(--dark);
     color: rgba(255, 255, 255, 0.75);
 }
@@ -575,13 +537,10 @@ button {
 .footer::after {
     content: "";
     position: absolute;
-
     left: 0;
     bottom: -35px;
-
     width: 100%;
     height: 80px;
-
     pointer-events: none;
 }
 
@@ -622,14 +581,12 @@ button {
             transparent 70%);
 
     opacity: 0.9;
-
     animation: flamesMove 2.5s ease-in-out infinite alternate;
 }
 
 /* Segunda capa */
 .footer::after {
     bottom: -45px;
-
     background:
         radial-gradient(ellipse 25px 55px at 10% 100%,
             #e8b46f 0%,
@@ -652,9 +609,7 @@ button {
         radial-gradient(ellipse 25px 55px at 91% 100%,
             #e8b46f 0%,
             transparent 70%);
-
     opacity: 0.7;
-
     animation: flamesMove 1.8s ease-in-out infinite alternate-reverse;
 }
 
@@ -700,27 +655,19 @@ button {
     position: fixed;
     right: 22px;
     bottom: 22px;
-
     z-index: 999;
-
     width: 60px;
     height: 60px;
-
     display: none;
     place-items: center;
-
     border-radius: 50%;
-
     background: #25D366;
     color: white;
-
     font-size: 1.6rem;
-
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-
     transition: transform 0.2s ease;
-
     animation: pulse 2s infinite;
+    cursor: pointer;
 }
 
 .whatsapp-floating:hover {
@@ -751,6 +698,14 @@ button {
         display: none;
     }
 
+    .header-brand {
+        display: block;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--primary);
+        white-space: nowrap;
+    }
+
     .whatsapp-floating {
         display: grid;
     }
@@ -764,16 +719,12 @@ button {
         top: 76px;
         left: 0;
         right: 0;
-
         display: none;
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-
         background: var(--white);
-
         border-top: 1px solid rgba(0, 0, 0, 0.05);
-
         box-shadow: var(--shadow);
     }
 

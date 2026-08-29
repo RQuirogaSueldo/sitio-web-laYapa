@@ -5,51 +5,42 @@
 const menuToggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav");
 
-menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
+if (menuToggle && nav) {
 
-    const abierto = nav.classList.contains("active");
+    menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
 
-    menuToggle.setAttribute(
-        "aria-label",
-        abierto ? "Cerrar menú" : "Abrir menú"
-    );
-});
+        const abierto = nav.classList.contains("active");
 
-
-/* Cerrar menú al seleccionar una opción */
-
-const navLinks = document.querySelectorAll(".nav a");
-
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        nav.classList.remove("active");
-        menuToggle.setAttribute("aria-label", "Abrir menú");
+        menuToggle.setAttribute(
+            "aria-label",
+            abierto ? "Cerrar menú" : "Abrir menú"
+        );
     });
-});
+
+
+    /* Cerrar menú al seleccionar una opción */
+
+    const navLinks = document.querySelectorAll(".nav a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("active");
+            menuToggle.setAttribute("aria-label", "Abrir menú");
+        });
+    });
+
+}
 
 
 /* ==================================================
    WHATSAPP
 ================================================== */
 
-/*
-    IMPORTANTE:
-    Reemplazar el número cuando esté disponible.
-
-    Formato:
-    código de país + código de área + número
-
-    Ejemplo Argentina:
-    549XXXXXXXXXX
-
-    SIN +, SIN ESPACIOS Y SIN GUIONES.
-*/
-
 const whatsappNumber = "5493834343815";
 
 const whatsappMessage =
-    "Hola, quiero hacer un pedido de paleta/pierna de cerdo al horno. ¿Me pueden informar disponibilidad y precio?";
+    "Hola, quiero hacer un pedido de paleta/pierna de cerdo. ¿Me pueden informar disponibilidad y precio?";
 
 
 const whatsappLinks = document.querySelectorAll("[data-whatsapp]");
