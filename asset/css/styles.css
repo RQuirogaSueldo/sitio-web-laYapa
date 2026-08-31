@@ -786,6 +786,10 @@ button {
     .footer-content {
         flex-direction: column;
     }
+
+    .social-links {
+        text-align: left;
+    }
 }
 
 
