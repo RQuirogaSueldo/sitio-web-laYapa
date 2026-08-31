@@ -46,7 +46,9 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-heading);
     font-weight: 700;
 }
@@ -628,6 +630,26 @@ button {
     font-size: 0.85rem;
 }
 
+.social-links {
+    text-align: center;
+}
+
+.social-links p {
+    margin-bottom: 12px;
+}
+
+.social-links a {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin: 0 12px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: var(--secondary);
+}
+
 
 /* Movimiento de las llamas */
 
@@ -679,9 +701,11 @@ button {
     0% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
     }
+
     70% {
         box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
