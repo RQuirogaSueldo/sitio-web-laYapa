@@ -1,0 +1,27 @@
+{
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "LA YAPA",
+    "description": "Paletas y piernas de cerdo al horno, acompañadas con panes y salsas caseras.",
+    "url": "[COMPLETAR DOMINIO]",
+    "telephone": "+5493834343815",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "San Luis 1276",
+        "addressLocality": "San Fernando del Valle de Catamarca",
+        "addressRegion": "Catamarca",
+        "addressCountry": "AR"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -28.4773467,
+        "longitude": -65.7907951
+    },
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "21:00"
+    },
+    "priceRange": "$$"
+}
