@@ -844,6 +844,17 @@ body.menu-open {
         z-index: 1001;
     }
 
+    .nav-mobile-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: 0;
+        background: transparent;
+        color: var(--white);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
     .nav-mobile.active {
         display: flex;
     }
