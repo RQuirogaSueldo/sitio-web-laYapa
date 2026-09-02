@@ -3,16 +3,16 @@
 ================================================== */
 
 const menuToggle = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav");
+const navMobile = document.getElementById("nav-mobile");
 
-if (menuToggle && nav) {
+if (menuToggle && navMobile) {
 
     menuToggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
+        navMobile.classList.toggle("active");
         menuToggle.classList.toggle("active");
         document.body.classList.toggle("menu-open");
 
-        const abierto = nav.classList.contains("active");
+        const abierto = navMobile.classList.contains("active");
 
         menuToggle.setAttribute(
             "aria-label",
@@ -23,11 +23,11 @@ if (menuToggle && nav) {
 
     /* Cerrar menú al seleccionar una opción */
 
-    const navLinks = document.querySelectorAll(".nav a");
+    const navLinks = document.querySelectorAll(".nav-mobile a");
 
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
-            nav.classList.remove("active");
+            navMobile.classList.remove("active");
             menuToggle.classList.remove("active");
             document.body.classList.remove("menu-open");
             menuToggle.setAttribute("aria-label", "Abrir menú");
