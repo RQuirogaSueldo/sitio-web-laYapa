@@ -779,6 +779,10 @@ body.menu-open {
 }
 
 
+.nav-mobile {
+    display: none;
+}
+
 /* ==================================================
    RESPONSIVE
 ================================================== */
@@ -943,10 +947,6 @@ body.menu-open {
     .hero-tag {
         display: none;
     }
-
-.nav-mobile {
-    display: none;
-}
 
 .hero {
         min-height: 600px;
