@@ -944,7 +944,11 @@ body.menu-open {
         display: none;
     }
 
-    .hero {
+.nav-mobile {
+    display: none;
+}
+
+.hero {
         min-height: 600px;
     }
 
