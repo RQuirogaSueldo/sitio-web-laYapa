@@ -275,7 +275,7 @@ body.menu-open {
     object-fit: cover;
 }
 
-.hero-video after {
+.hero-video::after {
     content: "";
     position: absolute;
     top: 0;
