@@ -4,6 +4,7 @@
 
 const menuToggle = document.getElementById("menu-toggle");
 const navMobile = document.getElementById("nav-mobile");
+const navMobileClose = document.getElementById("nav-mobile-close");
 
 if (menuToggle && navMobile) {
 
@@ -19,6 +20,15 @@ if (menuToggle && navMobile) {
             abierto ? "Cerrar menú" : "Abrir menú"
         );
     });
+
+    if (navMobileClose) {
+        navMobileClose.addEventListener("click", () => {
+            navMobile.classList.remove("active");
+            menuToggle.classList.remove("active");
+            document.body.classList.remove("menu-open");
+            menuToggle.setAttribute("aria-label", "Abrir menú");
+        });
+    }
 
 
     /* Cerrar menú al seleccionar una opción */
