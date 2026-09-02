@@ -836,17 +836,12 @@ body.menu-open {
         align-items: center;
         justify-content: center;
         gap: 24px;
-        background: var(--dark);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
+        background: #3B120C;
         z-index: 1001;
     }
 
     .nav.active {
         display: flex;
-        opacity: 1;
-        visibility: visible;
     }
 
     .nav a {
